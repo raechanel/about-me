@@ -1,0 +1,28 @@
+* {
+  background-color: black;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  background-color: rgb(145, 13, 13);
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+
+footer {
+  text-align: right;
+}
+
+main {
+  color: azure;
+  text-align: center;
+}
+
+img {
+  margin-top: 125px;
+  margin-bottom: 100px;
+}
