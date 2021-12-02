@@ -1,26 +1,32 @@
 'use strict'
-
+function introQuestion(){
   let user = prompt('What is your name?');
   // console.log('The user\'s name is ' + user);
   alert ('Welcome '  + user + ':) We\'ll play a guessing game! I\'ll ask you seven yes or no questions about me. You may answer "Yes/No" or "Y/N". Shall we begin :)');
+  return user;
 
+}
+
+  let user = introQuestion();
   let correctAnswers = 0
 
 
 // Question One
+function questionOne(){
+  let answerOne = prompt('Is my nickname Rae?').toLowerCase();
+  
+  if (answerOne === 'yes' || answerOne === 'y'){
+    // console.log('Yes, my nickname is Rae :)')
+    alert ('Yes! My nickname is Rae');
+    correctAnswers++;
+  } else {
+      (answerOne === 'no' || answerOne === 'n')
+      // console.log('Wrong Answer')
+      alert ('Wrong Answer!')
+  }
 
-let answerOne = prompt('Is my nickname Rae?').toLowerCase();
-
-if (answerOne === 'yes' || answerOne === 'y'){
-  // console.log('Yes, my nickname is Rae :)')
-  alert ('Yes! My nickname is Rae');
-  correctAnswers++;
-} else {
-    (answerOne === 'no' || answerOne === 'n')
-    // console.log('Wrong Answer')
-    alert ('Wrong Answer!')
 }
-
+questionOne();
 // Question 2
 
 let answerTwo = prompt('Am I 23 years old?').toLowerCase();
