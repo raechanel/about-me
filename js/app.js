@@ -28,32 +28,39 @@ function questionOne(){
 }
 questionOne();
 // Question 2
+function questionTwo(){
+  
+  let answerTwo = prompt('Am I 23 years old?').toLowerCase();
+  
+  if (answerTwo === 'yes' || answerTwo === 'y'){
+    // console.log('Yes, I am 23 years old :)')
+    alert ('Yes! I am 23 years old');
+    correctAnswers++;
+  } else {
+      (answerTwo === 'no' || answerTwo === 'n')
+      // console.log('Wrong Answer, I am 23 years old')
+      alert ('Wrong Answer! I am 23 years old')
+  }
 
-let answerTwo = prompt('Am I 23 years old?').toLowerCase();
-
-if (answerTwo === 'yes' || answerTwo === 'y'){
-  // console.log('Yes, I am 23 years old :)')
-  alert ('Yes! I am 23 years old');
-  correctAnswers++;
-} else {
-    (answerTwo === 'no' || answerTwo === 'n')
-    // console.log('Wrong Answer, I am 23 years old')
-    alert ('Wrong Answer! I am 23 years old')
 }
+questionTwo();
 
 // Question 3
+function questionThree(){
 
-let answerThree = prompt('Did I enter the Army after high school?').toLowerCase();
-
-if (answerThree === 'no' || answerThree === 'n'){
-  // console.log('Correct! I entered the Air Force :)')
-  alert ('Correct! I entered the Air Force :)');
-  correctAnswers++;
-} else {
-    (answerThree === 'yes' || answerThree === 'y')
-    // console.log('Wrong Answer, I entered the Air Force :)')
-    alert ('Wrong Answer! I entered the Air Force :)')
+  let answerThree = prompt('Did I enter the Army after high school?').toLowerCase();
+  
+  if (answerThree === 'no' || answerThree === 'n'){
+    // console.log('Correct! I entered the Air Force :)')
+    alert ('Correct! I entered the Air Force :)');
+    correctAnswers++;
+  } else {
+      (answerThree === 'yes' || answerThree === 'y')
+      // console.log('Wrong Answer, I entered the Air Force :)')
+      alert ('Wrong Answer! I entered the Air Force :)')
+  }
 }
+questionThree();
 
 //Question 4 
 
