@@ -24,6 +24,12 @@ ul {
   font-family:'Courier New', Courier, monospace
 }
 
+
+ol { 
+  text-align: left;
+  color:cadetblue;
+}
+
 footer {
   text-align: right;
 }
