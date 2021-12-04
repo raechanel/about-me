@@ -13,21 +13,26 @@ h1 {
 }
 
 h2 {
-  color: lightskyblue;
-  text-align: left;
-  font-family: 'Courier New', Courier, monospace;
+  color: red;
+  text-align: center;
 }
 
 ul {
-  text-align: left;
-  color: blue;
-  font-family:'Courier New', Courier, monospace
+  text-align: center;
+  color: azure;
 }
 
 
 ol { 
-  text-align: left;
-  color:cadetblue;
+  text-align: center;
+  color: azure;
+  list-style-type: circle;
+}
+
+li { 
+  color: aliceblue;
+  content: "•";
+  padding-right: 8px;
 }
 
 footer {
@@ -37,7 +42,6 @@ footer {
 main {
   color: azure;
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 img {

@@ -1,7 +1,6 @@
 'use strict'
 function introQuestion(){
   let user = prompt('What is your name?');
-  // console.log('The user\'s name is ' + user);
   alert ('Welcome '  + user + ':) We\'ll play a guessing game! I\'ll ask you seven yes or no questions about me. You may answer "Yes/No" or "Y/N". Shall we begin :)');
   return user;
 
@@ -11,100 +10,95 @@ function introQuestion(){
   let correctAnswers = 0
 
 
-// Question One
+
+
 function questionOne(){
   let answerOne = prompt('Is my nickname Rae?').toLowerCase();
   
   if (answerOne === 'yes' || answerOne === 'y'){
-    // console.log('Yes, my nickname is Rae :)')
     alert ('Yes! My nickname is Rae');
     correctAnswers++;
   } else {
       (answerOne === 'no' || answerOne === 'n')
-      // console.log('Wrong Answer')
       alert ('Wrong Answer!')
   }
 
 }
 questionOne();
-// Question 2
+
+
+
 function questionTwo(){
   
   let answerTwo = prompt('Am I 23 years old?').toLowerCase();
   
   if (answerTwo === 'yes' || answerTwo === 'y'){
-    // console.log('Yes, I am 23 years old :)')
     alert ('Yes! I am 23 years old');
     correctAnswers++;
   } else {
       (answerTwo === 'no' || answerTwo === 'n')
-      // console.log('Wrong Answer, I am 23 years old')
       alert ('Wrong Answer! I am 23 years old')
   }
 
 }
 questionTwo();
 
-// Question 3
+
 function questionThree(){
 
   let answerThree = prompt('Did I enter the Army after high school?').toLowerCase();
   
   if (answerThree === 'no' || answerThree === 'n'){
-    // console.log('Correct! I entered the Air Force :)')
     alert ('Correct! I entered the Air Force :)');
     correctAnswers++;
   } else {
       (answerThree === 'yes' || answerThree === 'y')
-      // console.log('Wrong Answer, I entered the Air Force :)')
       alert ('Wrong Answer! I entered the Air Force :)')
   }
 }
 questionThree();
 
-//Question 4 
+
 function questionFour(){
 
   let answerFour= prompt('Do I live North Carolina?').toLowerCase();
   
   if (answerFour === 'no' || answerFour === 'n'){
-    // console.log('Correct! I live in New Jersey :)')
     alert ('Correct! I live in New Jersey :)')
     correctAnswers++;
   } else {
       (answerFour === 'yes' || answerFour === 'y')
-      // console.log('Wrong Answer! I live in New Jersey')
       alert ('Wrong Answer! I live in New Jersey')
   }
 }
 questionFour();
-// Question 5 
+
+
 function questionFive(){
 
   let answerFive = prompt('Do I have a daughter?').toLowerCase();
   
   if (answerFive === 'yes' || answerFive === 'y'){
-    // console.log('Yes, I have a daughter :)')
     alert ('Yes! I have a daughter :)')
     correctAnswers++;
   } else {
       (answerFive === 'no' || answerFive === 'n')
-      // console.log('Wrong Answer! I have a daughter')
       alert ('Wrong Answer! I have a daughter')
   }
 }
 questionFive();
-// Question 6
+
+
 function questionSix(){
 
-  let userNumber = prompt('Let\'s play another game: Guess my favorite number? I\'ll give you 4 trys. Hint: 1-50 ');
+  let userNumber = prompt('Guess my favorite number? I\'ll give you 4 trys. Hint: 1-10 ');
   let correctNumber = 8;
   let attempts = 4; 
   
   for(let i = 1; i < attempts; i++){
     console.log('i: ' + i)
-    while(userNumber < 1 || userNumber > 50){
-      userNumber = prompt('Try Again! Please enter a number 1-50');
+    while(userNumber < 1 || userNumber > 10){
+      userNumber = prompt('Try Again! Please enter a number 1-10');
     }
     console.log('userNumber: ' + userNumber)
     if(userNumber == correctNumber){
@@ -124,11 +118,11 @@ function questionSix(){
 }
 questionSix();
 
-// Question 7
+
 function questionSeven(){
 
-  let stateArray = ['texas', 'virgina', 'new jersey', 'tennessee'];
-  let userAnswer = prompt('One more game: Guess 1 of the 4 states I\'ve lived in?').toLowerCase();
+  let stateArray = ['texas', 'virginia', 'new jersey', 'tennessee'];
+  let userAnswer = prompt('Last question: Guess 1 of the 4 states I\'ve lived in?').toLowerCase();
   let guess = 6;
   
   for(let i = 1; i < guess; i++){
@@ -156,5 +150,5 @@ function questionSeven(){
   }
 }
 questionSeven();
-alert('Thanks ' + user + 'for taking the time out to take my "About Me Quiz"! You scored a ' + correctAnswers + '/7.')
+alert('Thanks ' + user + ' for taking the time out to take my "About Me Quiz"! You scored a ' + correctAnswers + '/7.')
 
