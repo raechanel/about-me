@@ -103,13 +103,13 @@ function questionSix(){
     console.log('userNumber: ' + userNumber)
     if(userNumber == correctNumber){
       console.log('answer was correct')
-      alert('CONGRATULATIONS!!! You are correct!');
+      alert('Great guess! You are correct!');
       correctAnswers++;
       i = 5;
     } else if (userNumber > correctNumber){
-      userNumber = prompt('Too High! Sorry, please try again!');
+      userNumber = prompt('Oops, too high! Try again!');
     } else if (userNumber < correctNumber){
-      userNumber = prompt('Too low! Sorry, please try again!');
+      userNumber = prompt('Oops, too low! Try again!');
     }
     if(i === attempts - 1){
       alert('Sorry too many attempts! The correct answer was ' + correctNumber);

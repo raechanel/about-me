@@ -1,15 +1,16 @@
 * {
-  background-color: black;
+  background: linear-gradient(to top right, #660033 0%, #003366 100%);
 }
 
 h1 {
   font-size: 3em;
   text-align: center;
-  background-color: rgb(145, 13, 13);
+  background-color: black;
   padding: 10px;
   width: 80%;
   margin: auto;
   margin-top: 50px;
+  
 }
 
 h2 {
